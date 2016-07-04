@@ -160,7 +160,7 @@ As the result we can see that fragment on html page:
 </script>
 ```
 
-[ajax]: https://ru.wikipedia.org/wiki/AJAX
+[ajax]: https://en.wikipedia.org/wiki/AJAX
 [composer.json]: ./composer.json
 [Composer]: http://getcomposer.org/
 [jQuery]: https://jquery.com/

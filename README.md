@@ -4,7 +4,6 @@ This ZF2 module generate javascript code for visualization tables with help of [
 Object of Form or Fieldset class is the source for grid generation.
 
 Installation
-Установка и автозагрузка
 ------------------------
 The module has file [composer.json][], which describe all needed relations.
 You can download and put the module in vendor/ yourself, but I recommend to use [Composer][] for download and install it.

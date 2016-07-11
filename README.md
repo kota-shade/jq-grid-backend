@@ -1,23 +1,23 @@
-JqGridBackend
+JqGridBackend ([Russian version](./README_ru.md))
 =============
-ZF2 модуль, генерирующий javascript-код для визуализации табличных данных с использованием [jqGrid][].
-Исходными данными для генерации грида является объекты типа Form или Fieldset
+This ZF2 module generate javascript code for visualization tables with help of [jqGrid][] plugin.
+Object of Form or Fieldset class is the source for grid generation.
 
-Установка и автозагрузка
+Installation
 ------------------------
-Модуль снабжен файлом [composer.json][], в котором описаны все необходимые зависимости, и что позволяет
-использовать [Composer][] для установки и автозагрузки.
-Вы можете самостоятельно склонировать проект в vendor/, однако использование composer рекомендуется.
-Модуль не содержит [jQuery][] и [jqGrid][]. Вы должны самостоятельно их установить в свой проект.
+The module has file [composer.json][], which describe all needed relations.
+You can download and put the module in vendor/ yourself, but I recommend to use [Composer][] for download and install it.
+The module doesn't include [jQuery][] and [jqGrid][]. You should download and setup their in your project yourself.
 
-Документация
+Documentation
 ------------
-Документацию к проекту можно прочитать по [ссылке](./docs/ru/index.md).
+You can read English documentation at this [url](./docs/en/index.md).
+Russian documentation can be found at this [url](./docs/ru/index.md).
 
-Поддержка
+Support
 ---------
-Если у Вас возникли сложности или вопросы по использованию модуля, создайте обсуждение в данном репозитарии
-или напишите на электронную почту <kota.shade@yandex.ru>
+If you have questions about using the module, create the discussion in repository or send
+the email to <kota.shade@yandex.ru>
 
 [composer.json]: ./composer.json
 [Composer]: http://getcomposer.org/

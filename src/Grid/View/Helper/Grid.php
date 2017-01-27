@@ -119,7 +119,8 @@ class Grid extends AbstractHelper
             'options' => $options
         ]);
         $viewModel->setTemplate($this->getCurrentConfigKey('template'));
-        return $renderer->render($viewModel);
+        $ret = $renderer->render($viewModel);
+        return $ret;
 
     }
 

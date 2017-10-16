@@ -1,0 +1,9 @@
+
+div.gridColumnSelectorWrapper .grid-column-item input {
+    display: inline-block;
+    margin: 0;
+}
+div.gridColumnSelectorWrapper .grid-column-item label {
+    display: inline-block;
+    vertical-align: middle;
+}

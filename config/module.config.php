@@ -7,10 +7,8 @@ use Interop\Container\ContainerInterface;
 use JqGridBackend\GridAdapterPluginManager as GridAdapterPM;
 
 $gridAdapter = include(__DIR__ . '/grid_adapter.config.php');
-$assets = include(__DIR__ . '/assetic.config.php');
 
 return array_merge(
-    $assets,
     $gridAdapter,
     array(
         'controllers' => array(

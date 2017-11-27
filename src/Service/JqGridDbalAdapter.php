@@ -222,7 +222,7 @@ class JqGridDbalAdapter
         $query = $this->getQuery($inputData);
         $rows = $query->execute()->fetchAll(\PDO::FETCH_ASSOC);
         $total = $this->getTotal($query, $inputData);
-        $totalPages = intval($total / $inputData['rows']) +1;
+        $totalPages = ceil($total / $inputData['rows']);
         $page = (isset($inputData['page'])) ? $inputData['page'] : 1;
         return [
             'rows' => $rows,

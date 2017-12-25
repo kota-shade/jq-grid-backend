@@ -41,7 +41,13 @@ class RuleFilter extends InputFilter\InputFilter
             'bn' => 'bn',
             'ew' => 'ew',
             'en' => 'en',
-            'nc' => 'nc'
+            'nc' => 'nc',
+            'in' => 'in',
+            'ni' => 'ni',
+            'gt' => 'gt',
+            'ge' => 'ge',
+            'lt' => 'lt',
+            'le' => 'le'
         ]);
         $validatorChain = $op->getValidatorChain()
             ->attach($validator);

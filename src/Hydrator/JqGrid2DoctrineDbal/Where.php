@@ -105,11 +105,23 @@ class Where extends BaseHydrator
             case 'bn': //NOT RLIKE ^.*
                 $res = $expr->notLike($lval, $expr->literal($rval.'%'));
                 break;
-            case 'in':
-                $res = $expr->in($lval, implode(',', $rval));
+            case 'in': //IN
+                $newRval = [];
+                array_walk(
+                    $rval,
+                    function ($item, $key) use ($expr, &$newRval) {
+                        $newRval[$item] = $expr->literal($item);
+                    });
+                $res = $expr->in($lval, implode(',', $newRval));
                 break;
-            case 'ni':
-                $res = $expr->notIn($lval, implode(',', $rval));
+            case 'ni': //NOT IN
+                $newRval = [];
+                array_walk(
+                    $rval,
+                    function ($item, $key) use ($expr, &$newRval) {
+                        $newRval[$item] = $expr->literal($item);
+                    });
+                $res = $expr->notIn($lval, implode(',', $newRval));
                 break;
             case 'ew': //RLIKE .*$
                 $res = $expr->like($lval, $expr->literal('%'.$rval));
